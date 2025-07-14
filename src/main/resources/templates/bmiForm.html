@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-heartbeat"></i> BMI Calculator</h1>
+        <p class="subtitle">Calculate your Body Mass Index and know your health status</p>
+        <form action="/calculate" method="post">
+            <label><i class="fas fa-weight"></i> Weight (kg):</label>
+            <input type="number" step="0.1" name="weight" required placeholder="e.g. 65">
+
+            <label><i class="fas fa-ruler-vertical"></i> Height (cm):</label>
+            <input type="number" step="0.1" name="height" required placeholder="e.g. 170">
+
+            <button type="submit"><i class="fas fa-calculator"></i> Calculate BMI</button>
+        </form>
+        <div class="info">
+            <p>Normal BMI range: <strong>18.5 – 24.9</strong></p>
+            <p><i class="fas fa-info-circle"></i> Tip: Regular exercise and a balanced diet help keep BMI healthy!</p>
+        </div>
+    </div>
+</body>
+</html>
